@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerContainer {
+  position: relative;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.headerContainer svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.headerLeft,
+.headerRigth {
+  position: relative;
+  z-index: 1;
+  border: 2px solid yellow;
+}
+
+.portrait {
+  width: 30vw;
+  height: 60vh;
+  z-index: 0;
+}
+
+.name {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.headerRigth {
+  width: 40vw;
+  height: 25vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.2vh;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainerProjects {
+  margin: 100px 0;
+}
+
+.projectsHeader {
+  margin-bottom: 20px;
+  font-size: 2.2vw;
+  font-weight: 400;
+}
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+}
+.singleProjectDiv {
+  width: 15vw;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: -1px 1px 8px 1px rgba(147, 135, 135, 0.658);
+}
+.projectImg {
+  width: 150px;
+}
+
+.projectInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+}

@@ -5,11 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
-    <svg viewBox="0 0 200 75" style="width: 100%; height: auto">
-      <polygon points="200,0 200,30 0,75 0,0" fill="lightblue" />
-    </svg>
+    <header>
+      <div class="headerContainer">
+        <svg viewBox="0 0 170 75" style="width: 100%; height: auto">
+          <polygon points="200,0 200,40 0,75 0,0" fill="lightblue" />
+        </svg>
+
+        <div class="headerLeft">
+          <img
+            src="https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg"
+            alt="portrait"
+            class="portrait"
+          />
+          <h1 class="name">Boyana Dimitrova</h1>
+        </div>
+
+        <div class="headerRigth">
+          <p class="aboutMe">About me</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga
+            est et eos nulla quos illo autem alias eligendi iste! Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Laudantium cumque
+            explicabo qui est perferendis quisquam doloribus, fugiat amet sunt.
+            Praesentium.
+          </p>
+          <div class="icons">
+            <a
+              href="https://github.com/boyanaaaa?tab=repositories"
+              target="_blank"
+              ><i class="devicon-github-original"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/boyana-dimitrova-31497720a/"
+              target="_blank"
+              ><i class="devicon-linkedin-plain"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="mainContainerProjects">
+        <p class="projectsHeader">My Work</p>
+        <div class="projectsContainer">
+          <div class="singleProjectDiv">
+            <img
+              src="https://images.pexels.com/photos/811587/pexels-photo-811587.jpeg"
+              alt=""
+              class="projectImg"
+            />
+            <div class="projectInfo">
+              <p class="projectName">Project Name</p>
+              <div class="iconsProject">
+                <a
+                  href="https://github.com/boyanaaaa?tab=repositories"
+                  target="_blank"
+                  ><i class="devicon-github-original"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/boyana-dimitrova-31497720a/"
+                  target="_blank"
+                  ><i class="devicon-linkedin-plain"></i
+                ></a>
+              </div>
+            </div>
+            <div class="projectDescription">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                similique id velit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="index.js"></script>
   </body>
