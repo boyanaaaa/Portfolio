@@ -213,13 +213,21 @@ section {
 }
 
 @media only screen and (max-width: 440px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+
   .portrait,
   .headerRigth {
-    width: 60vw;
+    width: 70vw;
   }
 
   .projectsContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projectsHeader {
+    font-size: 3vh;
   }
 
   .singleProjectDiv {
@@ -232,10 +240,19 @@ section {
   }
 
   .footerMainContainer {
+    padding-top: 20px;
     gap: 70px;
   }
 
+  .footerLeft {
+    width: 45vw;
+  }
+
   .footerRight img {
-    width: 60vw;
+    width: 70vw;
+  }
+
+  a {
+    font-size: 3vh;
   }
 }
