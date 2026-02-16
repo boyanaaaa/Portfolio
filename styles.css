@@ -101,10 +101,12 @@ section {
   display: flex;
   gap: 12px;
   padding: 0 3px;
+  font-size: 2vh;
 }
 
 .infoPara {
   text-align: center;
+  font-size: 1.9vh;
 }
 
 /*  FOOTER. */
@@ -137,4 +139,103 @@ section {
 .footerRight img {
   width: 30vw;
   height: 50vh;
+}
+
+@media only screen and (max-width: 720px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+
+  .portrait {
+    width: 40vw;
+    height: 50vh;
+  }
+
+  .name {
+    top: 10px;
+  }
+
+  .headerRigth {
+    height: 35vh;
+  }
+
+  /*. SECTION */
+
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projectsHeader {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  .singleProjectDiv {
+    width: 35vw;
+    height: 40vh;
+  }
+
+  .aboutMe {
+    font-size: 2.7vh;
+  }
+
+  .projectImg {
+    max-width: 35vw;
+  }
+
+  /*. FOOTER. */
+
+  .footerLeft h3 {
+    font-size: 2.7vh;
+  }
+  .footerLeft p {
+    font-size: 2.1vh;
+  }
+
+  a {
+    font-size: 3vh;
+  }
+
+  .footerRight img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footerMainContainer {
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .portrait,
+  .headerRigth {
+    width: 60vw;
+  }
+
+  .projectsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .singleProjectDiv {
+    width: 55vw;
+    height: 40vh;
+  }
+
+  .projectImg {
+    max-width: 55vw;
+  }
+
+  .footerMainContainer {
+    gap: 70px;
+  }
+
+  .footerRight img {
+    width: 60vw;
+  }
 }
